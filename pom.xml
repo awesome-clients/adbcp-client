@@ -102,4 +102,16 @@
 			<url>http://192.168.3.23:18081/nexus/content/groups/public/</url>
 		</repository>
 	</repositories>
+		<!-- 部署仓库 -->
+	<distributionManagement>
+		<snapshotRepository>
+			<id>zxsoft-snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>http://192.168.3.23:18081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>sentiment</id>
+			<url>http://192.168.3.23:18081/nexus/content/repositories/sentiment</url>
+		</repository>
+	</distributionManagement>
 </project>
